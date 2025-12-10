@@ -1084,3 +1084,91 @@ h1, h2, h3, h4 {
   opacity: 1;
   visibility: visible;
 }
+/* --- Legal Pages Styles --- */
+.pages {
+  padding-top: calc(var(--header-height) + 60px);
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+.pages__container {
+  max-width: 800px; /* Делаем текст уже для удобства чтения */
+}
+
+.pages__title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #fff;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pages h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.pages p {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.pages strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.pages ul {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.pages ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Кастомные маркеры списка */
+.pages ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+}
+
+.pages__contact {
+  margin-top: 60px;
+  padding: 30px;
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.pages__contact h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.link-accent {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.link-accent:hover {
+  border-color: var(--color-accent);
+}
